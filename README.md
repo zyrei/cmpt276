@@ -1,9 +1,13 @@
 # A Thousand Words
 ---
 Jiamin Ren - 301279281
+
 Derek Yuan - 301198321
+
 André Lezama - 301256435
+
 Nancy Dai - 301247768
+
 Long Hoang Mai - 301256360
 
 A Thousand Words
