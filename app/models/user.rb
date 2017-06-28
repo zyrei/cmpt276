@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-	attr_accessor :email, :password, :password_confirmation, :nickname
+	attr_accessor :password, :email, :password_confirmation
 	before_save :encrypt_password
 
 	validates_confirmation_of :password
