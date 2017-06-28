@@ -1,1 +1,29 @@
-<p>testing</p>
+<h1>My Profile</h1>
+
+<!--Show user nickname <%= current_user.nickname %> -->
+<img src="headshot.jpg">
+
+<table border='1'>
+	
+
+	<tr>
+	<td>Name:</td>
+	<td> <%= current_user.nickname %></td>
+	</tr>
+
+	<tr>
+	<td>Gender:</td>
+	<td> <%= current_user.gender%></td>
+	</tr>
+
+	<tr>
+	<td>Age:</td>
+	<td> <%= current_user.age %></td>
+	</tr>
+
+	<tr>
+	<td>Description:</td>
+	<td> <%= current_user.descriptions %></td>
+	</tr>
+</table> 
+
