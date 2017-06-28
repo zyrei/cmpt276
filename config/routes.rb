@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get 'a_thousand_word/home'
 
+  get 'users/show'
+
   get 'sessions/new'
   
   #get 'welcome/index'
