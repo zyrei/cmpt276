@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/browse'
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   root 'a_thousand_word#home'
