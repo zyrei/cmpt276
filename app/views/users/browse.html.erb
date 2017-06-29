@@ -1,0 +1,34 @@
+<h1>Finding matches near you...</h1>
+
+
+<!--
+<% @others = User.all %>
+<% @list = [] %>
+<% @gender = [] %>
+
+<%  for u in @others do 
+	 @list.push(u.nickname) 
+	 @gender.push(u.gender)
+
+
+end 
+%>
+<%= for x in @list do  end %>
+<br/>
+<%= for x in @gender do  end %>
+<br/>
+
+<%= User.first.nickname %>
+<br/>
+-->
+
+<% @users = User.where.not(id: 1) %>
+<% @users.each do |u| %>
+	<h1><%= u.nickname %> </h1>
+	<%= u.gender %>
+	<%= u.age %>
+	<%= u.city %>
+	<p>Description</p>
+	<%= u.descriptions %>
+	<%= u.gender %>
+<% end %>
