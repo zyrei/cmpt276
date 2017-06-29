@@ -1,4 +1,4 @@
-<h1>Finding matches near you...</h1>
+<h1 style="color: white; text-align: center;">Finding matches near you...</h1>
 
 
 <!--
@@ -24,11 +24,11 @@ end
 
 <% @users = User.where.not(id: 1) %>
 <% @users.each do |u| %>
-	<h1><%= u.nickname %> </h1>
-	<%= u.gender %>
+	<h1 style="color: white; text-align: center;"><%= u.nickname %> </h1>
+	<%=  u.gender %>
 	<%= u.age %>
 	<%= u.city %>
-	<p>Description</p>
+	<p style="color: white; text-align: center;">Description</p>
 	<%= u.descriptions %>
 	<%= u.gender %>
 <% end %>
