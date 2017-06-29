@@ -1,13 +1,13 @@
-<h1>Log in</h1>
+<h1 style="color: white; text-align: center;">Log in</h1>
 
 <%= form_tag sessions_path do %>
-  <p>
+  <p style="color: white; text-align: center;">
     <%= label_tag :email %><br />
     <%= text_field_tag :email, params[:email] %>
   </p>
-  <p>
+  <p style="color: white; text-align: center;">
     <%= label_tag :password %><br />
     <%= password_field_tag :password %>
   </p>
-  <p class="button"><%= submit_tag "Login"%></p>
+  <p class="button" style=" text-align: center;" ><%= submit_tag "Login"%></p>
 <% end %>
