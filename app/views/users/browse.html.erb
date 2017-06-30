@@ -22,10 +22,10 @@ end
 <br/>
 -->
 
-<% @users = User.where.not(id: 1) %>
+
 <% @users.each do |u| %>
 	<h1 style="color: white; text-align: center;"><%= u.nickname %> </h1>
-	<%=  u.gender %>
+	<%= u.gender %>
 	<%= u.age %>
 	<%= u.city %>
 	<p style="color: white; text-align: center;">Description</p>

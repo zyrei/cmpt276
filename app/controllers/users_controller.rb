@@ -2,10 +2,9 @@ class UsersController < ApplicationController
 
 # Use strong_parameters for attribute whitelisting
 # Be sure to update your create() and update() controller methods.
-  @users = User.all
 
-  def show
-    @user = User.all
+  def browse
+    @users = User.where.not(id: current_user.id)
   end 
   def new
   	@user = User.new
