@@ -25,10 +25,15 @@ end
 
 <% @users.each do |u| %>
 	<h1 style="color: white; text-align: center;"><%= u.nickname %> </h1>
+	<p style="color: white; text-align: center;">
+	<%= image_tag u.avatar.url(:medium) %>
+	<br/>
 	<%= u.gender %>
 	<%= u.age %>
 	<%= u.city %>
-	<p style="color: white; text-align: center;">Description</p>
+	</p>
+	<p style="color: white; text-align: center;">Description:
+	<br/>
 	<%= u.descriptions %>
-	<%= u.gender %>
+	</p>
 <% end %>
