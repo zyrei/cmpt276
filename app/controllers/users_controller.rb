@@ -1,6 +1,11 @@
 class UsersController < ApplicationController
+
+# Use strong_parameters for attribute whitelisting
+# Be sure to update your create() and update() controller methods.
+  @users = User.all
+
   def show
-    @User = User.all
+    @user = User.all
   end 
   def new
   	@user = User.new
@@ -15,7 +20,7 @@ class UsersController < ApplicationController
   	end
   end
   def user_params
-  	params.require(:user).permit(:nickname, :email, :password, :password_confirmation, :age, :gender, :city, :descriptions)
+  	params.require(:user).permit(:nickname, :email, :password, :password_confirmation, :age, :gender, :city, :descriptions, :avatar)
   end
   #def show
 end

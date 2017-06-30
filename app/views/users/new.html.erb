@@ -1,6 +1,7 @@
 <h1 style="color: white; text-align: center;">Sign Up</h1>
 
-<%= form_for @user do |f| %>
+<%= form_for @user, html: { multipart: true } do |f| %>
+
   <% if @user.errors.any? %>
     <div class="error_messages">
       <h2>Form is invalid</h2>
@@ -43,5 +44,13 @@
     <%= f.label :descriptions %><br/>
     <%= f.text_field :descriptions %>
   </p>
+    <p style="color: white; text-align: center;">
+    <%= f.label :image %><br/>
+    <%= f.file_field :avatar %> 
+  </p>
   <p class="button" style=" text-align: center;"><%= f.submit %></p>
+
+
+
+
 <% end %>
