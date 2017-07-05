@@ -2,11 +2,11 @@
 
 <%= form_tag sessions_path do %>
   <p style="color: white; text-align: center;">
-    <%= label_tag :email %><br />
+    <%= label_tag :email, "Email"%><br />
     <%= text_field_tag :email, params[:email] %>
   </p>
   <p style="color: white; text-align: center;">
-    <%= label_tag :password %><br />
+    <%= label_tag :password, "Password" %><br />
     <%= password_field_tag :password %>
   </p>
   <p class="button" style=" text-align: center;" ><%= submit_tag "Login"%></p>
