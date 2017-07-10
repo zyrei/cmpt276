@@ -11,7 +11,8 @@ gem 'rails', '~> 5.1.1'
 gem 'devise'
 gem "paperclip", "~> 5.0.0"
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', :group => [:development, :test]
+#gem 'sqlite3', :group => [:development, :test]
+gem 'mysql2'
 group :production do
   gem 'thin'
   gem 'pg'
