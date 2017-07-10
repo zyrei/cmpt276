@@ -1,0 +1,46 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//tr:nth-child(even) {
+ // background-color: #f2f2f2;
+//}
+
+table {
+ width: 50%;
+}
+
+a{
+	color: Black;
+}
+ input, select, textarea {
+  color: black;
+}
+table {
+ width: 50%;
+
+}
+th {
+  height: 20px;
+
+}
+td {
+  height: 100px;
+  vertical-align: bottom;
+}
+//tr,td {
+ // color:  	;
+  //font-size: 20px;
+//}
+table {
+  background-color:#D3D3D3;
+  	background-opacity: 0.2;
+}
+
+body{
+	background-image: url("images.jpeg");
+	background-opacity: 0.3;
+	//background-color:  	#696969
+	//#FFE4C4;
+}
