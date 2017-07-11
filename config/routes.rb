@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'users/browse'
+  get 'users/browse' , :as => "browse"
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
@@ -10,12 +10,11 @@ Rails.application.routes.draw do
   get 'users/show'
 
   get 'sessions/new'
-  
-  #get 'welcome/index'
 
   get "log_out" =>"sessions#destroy", :as => "log_out"
   get "log_in" =>"sessions#new", :as => "log_in"
   get "sign_up" =>"users#new", :as => "sign_up"
+  
   resources :users
   resources :sessions
   resources :profiles
