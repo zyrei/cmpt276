@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
   get 'profile/index'
 
-  get 'pages/index'
+  get 'atw/home'
 
   devise_for :users, controllers:{ registrations: 'users/registrations'}
-  root 'pages#index'
+
+  root 'atw#home'
 
   resources :profile
 
