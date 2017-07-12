@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  
   get 'users/browse' , :as => "browse"
 
   devise_for :admin_users, ActiveAdmin::Devise.config
@@ -18,6 +19,8 @@ Rails.application.routes.draw do
   resources :users
   resources :sessions
   resources :profiles
+
+  devise_for :devise_users, controllers: { registration: 'devise_users/registration' }
 
   #root 'welcome#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
