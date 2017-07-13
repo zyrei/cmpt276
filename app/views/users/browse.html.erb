@@ -1,4 +1,6 @@
-<h1 style="color: white; text-align: center;">Finding matches near you...</h1>
+<div class="contain">
+
+<h1 style="color: white; text-align: center;"> Potential Matches </h1>
 
 
 <!--
@@ -24,9 +26,16 @@ end
 
 
 <% @users.each do |u| %>
+	<div class="userlist">
+
 	<h1 style="color: white; text-align: center;"><%= u.nickname %> </h1>
 	<p style="color: white; text-align: center;">
-	<%= image_tag u.avatar.url(:medium) %>
+	
+	<%if u.avatar_file_name.blank? %>
+		<%= image_tag "no_user_image.png", size: "100x100"%>
+	<%else%>
+		<%= image_tag u.avatar.url(:medium) %>
+	<% end %>
 	<br/>
 	<%= u.gender %>
 	<%= u.age %>
@@ -36,4 +45,9 @@ end
 	<br/>
 	<%= u.descriptions %>
 	</p>
+	<br />
+	</div>
+
 <% end %>
+
+</div>
