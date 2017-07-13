@@ -1,1 +1,29 @@
-<p>testing<p>
+
+<h1 style="color: white; text-align: center;">My Profile</h1>
+<!--Show user nickname <%= current_user.nickname %> -->
+<!--<img src="headshot.jpg">-->
+<p style="text-align:center;">
+<%= image_tag current_user.avatar.url(:medium) %>
+</p>
+<table align="center" border='1px solid black;'>
+
+	<tr style="font-size: 30px;">
+	<td>Name:</td>
+	<td> <%= current_user.nickname %></td>
+	</tr>
+
+	<tr style="font-size: 30px;">
+	<td>Gender:</td>
+	<td> <%= current_user.gender%></td>
+	</tr>
+
+	<tr style="font-size: 30px;">
+	<td>Age:</td>
+	<td> <%= current_user.age %></td>
+	</tr>
+
+	<tr style="font-size: 30px;">
+	<td>Description:</td>
+	<td> <%= current_user.descriptions %></td>
+	</tr>
+</table> 
