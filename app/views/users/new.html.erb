@@ -1,3 +1,5 @@
+<div class="contain">
+
 <h1 style="color: white; text-align: center;">Sign Up</h1>
 
 <%= form_for @user, html: { multipart: true } do |f| %>
@@ -45,8 +47,10 @@
     <%= f.text_field :descriptions %>
   </p>
     <p style="color: white; text-align: center;">
+    <center>
     <%= f.label :image %><br/>
     <%= f.file_field :avatar %> 
+    </center>
   </p>
   <p class="button" style=" text-align: center;"><%= f.submit %></p>
 
@@ -54,3 +58,5 @@
 
 
 <% end %>
+
+</div>
