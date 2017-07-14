@@ -4,7 +4,7 @@ class UsersController < ApplicationController
 # Be sure to update your create() and update() controller methods.
 
   def browse
-    @users = User.where.not(id: current_user.id)
+    @users = DeviseUser.where.not(id: current_devise_user.id)
   end 
   def new
   	@user = User.new
