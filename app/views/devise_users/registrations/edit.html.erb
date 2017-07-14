@@ -32,6 +32,31 @@
       <%= f.password_field :current_password, autocomplete: "off" %>
     </div>
 
+    <div class="field">
+      <%= f.label :age %><br/>
+      <%= f.text_field :age %>
+    </div>
+
+    <div class="field">
+      <%= f.label :gender %><br/>
+      <%= f.text_field :gender %>
+    </div>
+
+    <div class="field">
+      <%= f.label :city %><br/>
+      <%= f.text_field :city %>
+    </div>
+    
+    <div class="field">
+      <%= f.label :description %><br/>
+      <%= f.text_field :description %>
+    </div>
+
+      <div class="field">  
+        <%= f.label :image %><br/>
+        <%= f.file_field :avatar %> 
+      </div>
+
     <div class="actions">
       <%= f.submit "Update" %>
     </div>
