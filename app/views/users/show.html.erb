@@ -1,9 +1,21 @@
+<%= stylesheet_link_tag "users"%>
+
+<div class="contain">
+<br/>	
 
 <h1 style="color: white; text-align: center;">My Profile</h1>
 <!--Show user nickname <%= current_user.nickname %> -->
 <!--<img src="headshot.jpg">-->
 <p style="text-align:center;">
-<%= image_tag current_user.avatar.url(:medium) %>
+
+
+<!-- <%= image_tag current_user.avatar.url(:medium) %> -->
+
+<%if current_user.avatar_file_name.blank? %>
+		<%= image_tag "no_user_image.png", size: "100x100"%>
+	<%else%>
+		<%= image_tag current_user.avatar.url(:medium) %>
+<% end %>
 </p>
 <table align="center" border='1px solid black;'>
 
@@ -27,4 +39,5 @@
 	<td> <%= current_user.descriptions %></td>
 	</tr>
 </table> 
-
+<br/>
+</div>>
