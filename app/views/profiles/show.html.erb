@@ -4,7 +4,13 @@
 
 
 <p style="text-align:center;">
-<%= image_tag current_devise_user.avatar.url(:medium) %>
+<!-- <%= image_tag current_devise_user.avatar.url(:medium) %> -->
+<%if current_devise_user.avatar_file_name.blank? %>
+		<%= image_tag "no_user_image.png", size: "300x300"%>
+	<%else%>
+		<%= image_tag current_devise_user.avatar.url(:medium) %>
+<% end %>
+
 </p>
 <table align="center" border='1px solid black;'>
 
