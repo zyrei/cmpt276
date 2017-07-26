@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :locations
   get 'users/browse' , :as => "browse"
 
   devise_for :admin_users, ActiveAdmin::Devise.config
