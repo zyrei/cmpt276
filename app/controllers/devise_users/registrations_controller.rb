@@ -1,4 +1,12 @@
 class DeviseUsers::RegistrationsController < Devise::RegistrationsController
+  def verify_google_recptcha(secret_key,response)
+     status = `curl "https://www.google.com/recaptcha/api/siteverify?secret=#{secret_key}&response=#{response}"`
+     logger.info "---------------status ==> #{status}"
+     hash = JSON.parse(status)
+     hash["success"] == true ? true : false
+  end
+
+  status = verify_google_recptcha(SECRET_KEY,params[‘g-recaptcha-response’])
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
 

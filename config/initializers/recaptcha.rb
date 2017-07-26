@@ -4,3 +4,5 @@ Recaptcha.configure do |config|
   config.secret_key = '6LdyAyoUAAAAAJPRbmK0xFCxpMNBfFf5HCgFhHCz'
 
 end
+
+SECRET_KEY = "6LdyAyoUAAAAAJPRbmK0xFCxpMNBfFf5HCgFhHCz"
