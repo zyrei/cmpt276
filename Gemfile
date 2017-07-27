@@ -10,6 +10,8 @@ end
 gem 'rails', '~> 5.1.1'
 gem 'devise'
 gem "paperclip", "~> 5.0.0"
+gem 'private_pub'
+gem 'thin'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', :group => [:development, :test]
 group :production do

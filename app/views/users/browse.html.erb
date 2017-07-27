@@ -49,6 +49,10 @@ end
 	</p>
 	<br/>
 	</div>
+
+	<%= link_to "Send Message", "user.name", class: "btn btn-sucess btn-xs start-conversation", "data-sid" => current_devise_user.id, "data-rip" => u.id
+	%>
+
 <% end %>
 
 </div>

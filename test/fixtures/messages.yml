@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  body: 
+  conversation: one
+  devise_user: one
+
+two:
+  body: 
+  conversation: two
+  devise_user: two
