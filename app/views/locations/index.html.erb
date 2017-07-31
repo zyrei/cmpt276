@@ -1,12 +1,11 @@
-<center style="color: white; text-align: center;">
 <p id="notice"><%= notice %></p>
 
-<h1  style="color: white; text-align: center;">Locations</h1>
+<h1>Locations</h1>
 
 
 <%= form_tag locations_path, :method => :get do %>
   <p>
-    <%= text_field_tag :search, params[:search] %>
+    <%= text_field_tag :city, params[:city] %>
     <%= submit_tag "Search Near", :name => nil %>
   </p>
 <% end %>
@@ -29,6 +28,7 @@
         <td><%= location.address %></td>
         <td><%= location.latitude %></td>
         <td><%= location.longitude %></td>
+        
         <td><%= link_to 'Show', location %></td>
         <td><%= link_to 'Edit', edit_location_path(location) %></td>
         <td><%= link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -40,4 +40,4 @@
 <br>
 
 <%= link_to 'New Location', new_location_path %>
-</center>
+

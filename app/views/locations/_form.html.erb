@@ -1,9 +1,4 @@
-<div class="userlist">
-
-
 <%= form_with(model: location, local: true) do |form| %>
-
-
   <% if location.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(location.errors.count, "error") %> prohibited this location from being saved:</h2>
@@ -15,8 +10,6 @@
       </ul>
     </div>
   <% end %>
-
-
 
   <div class="field">
     <%= form.label :address %>
@@ -37,5 +30,3 @@
     <%= form.submit %>
   </div>
 <% end %>
-
-</div>
