@@ -1,14 +1,5 @@
 class LocationsController < InheritedResources::Base
- 
 
- def edit
- 	@user = DeviseUser.find(current_devise_user.id)
- end
-
- def update
- 	@user = DeviseUser.find(current_devise_user.id)
- 	@user.update_attributes(params[:address, :latitude, :longitude])
- end
 
 
 def index
