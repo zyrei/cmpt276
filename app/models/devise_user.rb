@@ -11,4 +11,13 @@ class DeviseUser < ApplicationRecord
   geocoded_by :city
 after_validation :geocode, :if => :city_changed?
 
+  acts_as_messageable
+
+  def mailboxer_name 
+  	self.nickname
+  end
+
+  def mailboxer_email(object)
+  	self.email
+  end
 end
