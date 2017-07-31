@@ -63,3 +63,4 @@ gem 'listen'
 gem 'bcrypt'
 gem 'activeadmin', github: 'activeadmin'
 gem "recaptcha", require: "recaptcha/rails"
+gem 'geocoder'
