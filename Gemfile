@@ -64,4 +64,3 @@ gem 'bcrypt'
 gem 'mailboxer'
 gem 'activeadmin', github: 'activeadmin'
 gem "recaptcha", require: "recaptcha/rails"
-gem 'geocoder'
