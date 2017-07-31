@@ -61,6 +61,5 @@ gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem 'listen'
 gem 'bcrypt'
-gem 'mailboxer'
 gem 'activeadmin', github: 'activeadmin'
 gem "recaptcha", require: "recaptcha/rails"
